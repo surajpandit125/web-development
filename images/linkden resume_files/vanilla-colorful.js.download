@@ -1,0 +1,12 @@
+/*
+ * Skypack CDN - vanilla-colorful@0.6.2
+ * Remove "min" from url for additional help & instructions.
+ */
+
+export * from '/-/vanilla-colorful@v0.6.2-0XoZ348dkxQtFAeWmC1j/dist=es2020,mode=imports,min/optimized/vanilla-colorful.js';
+export {default} from '/-/vanilla-colorful@v0.6.2-0XoZ348dkxQtFAeWmC1j/dist=es2020,mode=imports,min/optimized/vanilla-colorful.js';
+
+// Perf Optimization: Preload Deep Imports
+import "/-/vanilla-colorful@v0.6.2-0XoZ348dkxQtFAeWmC1j/dist=es2020,mode=imports,min/optimized/vanilla-colorful/lib/entrypoints/hex.js";
+import "/-/vanilla-colorful@v0.6.2-0XoZ348dkxQtFAeWmC1j/dist=es2020,mode=imports,min/optimized/common/color-picker-546f317e.js";
+import "/-/vanilla-colorful@v0.6.2-0XoZ348dkxQtFAeWmC1j/dist=es2020,mode=imports,min/optimized/common/dom-283f7d97.js";

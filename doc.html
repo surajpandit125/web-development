@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <p id="mouse" onmousedown="mousedown()" onmouseup="mouseup()">Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit.
+        Consectetur, neque! Distinctio porro sit cum eius
+        voluptatem adipisci similique ex rerum dignissimos esse accusantium eaque maiores ipsam repellendus, quis
+        placeat numquam suscipit quia expedita ipsum iusto nostrum? Deserunt atque, nihil iste iusto quis tempora
+        delectus impedit natus deleniti eveniet voluptatibus qui facere quasi quidem quam, unde perferendis distinctio
+        vitae tenetur nemo in mollitia et esse eos? Aut repudiandae aspernatur ex dolores atque, eaque culpa maiores.
+        Amet iure sint cum debitis, suscipit modi consequuntur libero hic qui nulla assumenda alias maxime, nam
+        laudantium enim sunt aliquid illum non aperiam consectetur a blanditiis placeat! Suscipit cupiditate velit
+        pariatur voluptatibus aliquid aut ad sit maiores quibusdam optio maxime eum officia unde molestiae
+        exercitationem non, illum voluptas laudantium. Possimus!</p>
+    <div class="main_box">
+        <div id="box">
+
+        </div>
+    </div>
+    <style>
+        .btn {
+            background-color: blue;
+            border: 2px solid black;
+            justify-content: center;
+            align-items: center;
+            padding: 6px;
+            /* he
+            ight: 20px; */
+        }
+
+        .main_box {
+            align-items: center;
+            justify-content: center;
+            right: 50%;
+        }
+
+        #box {
+            height: 100px;
+            width: 100px;
+            border: 5px solid black;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+    <button onclick="goback()">Go Back</button>
+    <p id="btn">I want to be a programmer</p>
+    <h1 class="bt">want to do</h1>
+
+
+    <script>
+        // const goback = () => {
+        //     // window.history.back();
+        //     // document.getElementById('btn').innerHTML = " i want to do a part time job"
+        //     console.log(document.getElementsByClassName('btn'));
+        //     const historyid = document.getElementById('btn');
+        //     historyid.innerHTML = "want to do hard work and smart work";
+        // }
+
+
+        // function mousedown() {
+        //     document.getElementById("mouse").style.color = 'red';
+        // }
+        // function mouseup() {
+        //     document.getElementById("mouse").style.color = 'blue';
+        // }
+
+        // const Event = document.getElementById('box');
+
+        // Event.addEventListner('mouseenter', () => {
+        //     Event.style.backgroundcolor = "blue";
+        //     console.log("Enter the mouse");
+        // })
+
+        // Event.addEventListner('mouseleave', () => {
+        //     Event.style.backgroundcolor = "grey";
+        //     conlole.log("Leave the mouse");
+        // })
+
+        //SetTimeOut
+        var a;
+
+        a = setTimeout(fun, 2000);
+        function fun() {
+            alert("welcome to javascript");
+        }
+    </script>
+</body>
+
+</html>

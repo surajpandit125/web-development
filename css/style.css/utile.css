@@ -1,0 +1,15 @@
+/** @format */
+
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 5px 20px;
+  color: white;
+  background-color: rgb(27, 27, 161);
+  border: 2px solid white;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,31 @@
+/** @format */
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+li {
+  list-style: none;
+  display: inline;
+  padding: 24px;
+  align-content: center;
+}
+ul {
+  padding: 20px;
+}
+.box1 {
+  height: 40vh;
+  width: 40vw;
+  background-color: red;
+  float: right;
+}
+.box2 {
+  height: 40vh;
+  width: 40vw;
+  background-color: blue;
+  float: left;
+}

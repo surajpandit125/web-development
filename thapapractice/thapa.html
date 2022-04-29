@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parentbox {
+        /* box-sizing: border-box; */
+        height: 244px;
+        width: 256px;
+        border: 2px solid blue;
+        background-color: yellow;
+        cursor: pointer;
+        justify-content: center;
+        margin: 12% 0 0 30%;
+        /* margin-top: 12%; */
+        /* left: 254px; */
+    }
+
+    .childbox {
+        height: 144px;
+        width: 156px;
+        border: 2px solid black;
+        background-color: red;
+        cursor: pointer;
+        margin: 54px;
+        justify-items: center;
+    }
+</style>
+
+<body>
+    <div class="parentbox" id="parentid">
+        <div class="childbox" id="childid"></div>
+    </div>
+    <script src="thapa.js"></script>
+</body>
+
+</html>

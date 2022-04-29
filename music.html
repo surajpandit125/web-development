@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playing Music</title>
+    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="main_div">
+        <div class="music_container">
+            <h1 id="title">Music List</h1>
+            <h2 id="artist">Arjit singh</h2>
+
+            <div class="img_set">
+                <img src="image/firstclone/1.png.jpg">
+            </div>
+            <audio src="clonemusic/suraj-1.mp3"></audio>
+            <!-- <audio src="pictures/clonemusic/suraj-1"></audio> -->
+
+            <!-- using controls -->
+            <div class="music_control">
+                <i class="fa fa-2x fa-step-backward" id="prev" title="previous"></i>
+                <i class="fa fa-2x fa-play-circle-o" id="play" title="Play"></i>
+                <i class="fa fa-2x fa-step-forward" id="next" title="Next"></i>
+            </div>
+        </div>
+    </div>
+    <script>
+        const music = document.querySelector("audio");
+        const img = document.querySelector("img");
+        const play = document.getElementById("play");
+        const artist = document.getElementById("artist");
+        const title = document.getElementById("title");
+        const next = document.getElementById("next");
+        const prev = document.getElementById("prev");
+
+        const songs = [
+            {
+                name: "suraj-1",
+                title: "jug-jug",
+                artist: "Arjit sing",
+            },
+            {
+                name: "suraj-2",
+                title: "laldupata",
+                artist: "Arjit sing",
+            },
+            {
+                name: "suraj-3",
+                title: "yoyatra",
+                artist: "Arjit sing",
+            },
+
+        ]
+
+
+
+        let isplaying = false;
+        const playmusic = () => {
+            isplaying = true;
+            music.play();
+            play.classList.replace("fa-play", "fa-pause");
+            img.classList.add("anime");
+        };
+
+        const pausemusic = () => {
+            isplaying = false;
+            music.pause();
+            play.classList.replace("fa-pause", "fa-play");
+            img.classList.add("anime");
+        };
+        play.addEventListener("click", () => {
+            if (isplaying) {
+                pausemusic();
+            }
+            else {
+                playmusic();
+            }
+        });
+        const loadsong = (songs) => {
+            title.textContent = songs.title;
+            artist.textContent = songs.artist;
+            music.src = "clonemusic/" + songs.name + ".mp3";
+            // img.src = "images/" + songs.name + ".jpg";
+        };
+        // loadsong(songs[2]);
+        songindex = 0;
+        //for nex song
+        const nextsong = () => {
+            songindex = (songindex + 1) % songs.length;
+            // example 2=(2+1)%3=0
+            // 1=(1+1)%3=2 so in this way loop is running with above formula
+            // songindex++;
+            loadsong(songs[songindex]);
+            playmusic();
+            //here playmusic is used when we do next then play the music
+        };
+        //so for prev song
+        const prevsong = () => {
+            songindex = (songindex - 1 + songs.length) % songs.length;
+            loadsong(songs[songindex]);
+            playmusic();
+            //here same as next 
+        }
+        next.addEventListener("click", nextsong);
+        prev.addEventListener("click", prevsong);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check the random number</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body onload="initial()">
+    <main>
+        <div id="welcome">
+            <h1>Guess The Random Number Between 1-100</h1>
+            <img class="image" src="images/front.image.png">
+            <section class="eventsection">
+                <p>select the difficulty</p>
+                <div class="buttonwrapper">
+                    <button>Easy : 10 attempts</button>
+                    <button>Easy : 5 attempts</button>
+                </div>
+        </div>
+        </section>
+        <!-- Actual game area -->
+        <div id="gameArea ">
+            <div id="newGamearea">
+                <button>New Game</button>
+            </div>
+            <section>
+                <h2>Your Guess</h2>
+                <input type="text" id="inputbox" min="1" max="10" placeholder="Enter Your Name">
+            </section>
+            <section class="stats">
+                <div class="info">
+                    <p>Number of previpus attempts</p>
+                    <span id="attempts"> 0 </span>
+                </div>
+                <div class="info">
+                    <p>Number of previpus guesses</p>
+                    <span id="guesses"> 0 </span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- <script src="practice.js"></script> -->
+    <script src="practice.js"></script>
+</body>
+
+</html>

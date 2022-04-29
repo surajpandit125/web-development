@@ -1,0 +1,105 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Poppins:wght@300;400;500&family=Roboto+Condensed&family=Roboto+Slab:wght@200;400&display=swap");
+body {
+  background-color: antiquewhite;
+  /* height: 40vh; */
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  font-family: "Baloo Bhai 2", cursive, sans-serif, serif;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  background-color: black;
+
+  height: 68px;
+  color: white;
+}
+nav ul li {
+  padding: 0 12px;
+  /* margin: 12px 0px; */
+  /* align-items: center; */
+}
+.brand img {
+  height: 39px;
+  padding: 0 6px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+.container {
+  min-height: 77vh;
+  background-color: black;
+  color: white;
+  margin: 25px auto;
+  width: 80%;
+  border-radius: 12px;
+  background-image: url("image/firstclone/bg.png.jpg");
+}
+.songListcointainer {
+  margin: 74px 0;
+}
+.bottom {
+  position: sticky;
+  background-color: black;
+  height: 90px;
+  color: white;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#myporgressbar {
+  width: 100vh;
+  cursor: pointer;
+}
+.icons {
+  margin: 12px;
+}
+.icons i {
+  cursor: pointer;
+}
+.songItems {
+  /* height: 50px; */
+  display: flex;
+  background-color: white;
+  width: 40%;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+.songItems img {
+  width: 30px;
+  margin: 0 23px;
+  border-radius: 20px;
+}
+.timestamp {
+  margin: 0 23px;
+}
+.timestamp i {
+  cursor: pointer;
+}
+
+/* .songinfo img 
+  opacity: 1;
+  transition: opacity 1s ease-in;
+} */
+.songinfoside {
+  position: absolute;
+  left: 20vw;
+}
+.songinfoside img {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
